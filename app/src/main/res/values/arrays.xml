@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="entries_key_frame_interval">
+        <item>Default (30 frames)</item>
+        <item>1 frame</item>
+        <item>5 frames</item>
+        <item>10 frames</item>  
+        <item>15 frames</item>
+        <item>20 frames</item>
+        <item>25 frames</item>
+        <item>30 frames</item>
+    </string-array>
+    
+    <string-array name="values_key_frame_interval">
+        <item></item>
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>  
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>  
+    </string-array>
+    
+    <string-array name="entries_bit_rate">
+        <item>Default (2.5 MBPS)</item>
+        <item>1.2 MBPS (480p SD)</item>
+        <item>2.5 MBPS (480p ED)</item>
+        <item>5.0 MBPS (720p HD)</item>
+        <item>8.0 MBPS (1080p FHD)</item>
+    </string-array>
+    
+    <string-array name="values_bit_rate">
+        <item></item>
+        <item>1200000</item>
+        <item>2500000</item>
+        <item>5000000</item>
+        <item>8000000</item>
+    </string-array>
+    
+    <string-array name="entries_video_decoder">
+        <item>Custom H264 Decoder (Default)</item>
+        <item>Software I420 (Debug)</item>
+        <item>Software YUV(I422) (Debug)</item>
+    </string-array>
+    
+    <string-array name="values_video_decoder">
+        <item>@string/value_h264_custom_decoder</item>
+        <item>@string/value_i420_decoder</item>
+        <item>@string/value_yuv_decoder</item>
+    </string-array>
+    
+    <string-array name="entries_frame_rate">
+        <item>Default (30 FPS)</item>
+        <item>15 FPS</item>
+        <item>20 FPS</item>
+        <item>25 FPS</item>
+        <item>30 FPS</item>
+        <item>60 FPS</item>
+    </string-array>
+    
+    <string-array name="values_frame_rate">
+        <item></item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>60</item>
+    </string-array>
+
+    <string-array name="entries_decoder_target_view">
+        <item>SurfaceView</item>
+        <item>TextureView (Default)</item>
+    </string-array>
+
+    <string-array name="values_decoder_target_view">
+        <item>@string/value_surface_view</item>
+        <item>@string/value_texture_view</item>
+    </string-array>
+
+    <string-array name="entries_connect_mode">
+        <item>USB (Default)</item>
+        <item>Socket</item>
+    </string-array>
+    
+    <string-array name="values_connect_mode">
+        <item>@string/value_usb</item>
+        <item>@string/value_socket</item>
+    </string-array>
+
+    <string-array name="entries_encode_resolutions">
+        <item>640x480 (480p SD)</item>
+        <item>800x480 (480p ED - Default)</item>
+        <item>1024x600</item>
+        <item>1280x720 (720p HD)</item>
+        <item>1280x800</item>
+        <item>1920x1080 (1080p FHD)</item>
+    </string-array>
+
+    <string-array name="values_encode_resolutions">
+        <item>640x480</item>
+        <item>800x480</item>
+        <item>1024x600</item>
+        <item>1280x720</item>
+        <item>1280x800</item>
+        <item>1920x1080</item>
+    </string-array>
+
+</resources>

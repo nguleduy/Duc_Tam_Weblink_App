@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/tvService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WEBLINK Services" />
+
+        <Button
+            android:id="@+id/btnServiceRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvService"
+            android:text="btnServiceRegister" />
+
+        <TextView
+            android:id="@+id/tvServiceTimerStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnServiceRegister"
+            android:text="Timer: 00:00:00" />
+
+        <Button
+            android:id="@+id/btnServiceTimerCtl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvServiceTimerStatus"
+            android:text="btnServiceTimerCtl" />
+
+        <Button
+            android:id="@+id/btnServiceTimerReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/btnServiceTimerCtl"
+            android:layout_toRightOf="@id/btnServiceTimerCtl"
+            android:text="btnServiceTimerReset" />
+
+        <Button
+            android:id="@+id/btnServiceProxyServer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnServiceTimerCtl"
+            android:text="btnServiceProxyServer" />
+
+        <Button
+            android:id="@+id/btnServiceProxyClient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnServiceProxyServer"
+            android:text="btnServiceProxyClient" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/tvServiceClient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WEBLINK Service Client" />
+
+        <Spinner
+            android:id="@+id/spnServiceClientPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvServiceClient"
+            android:text="btnServiceProxyServer" />
+
+        <Button
+            android:id="@+id/btnServiceClientConnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/spnServiceClientPicker"
+            android:layout_toRightOf="@id/spnServiceClientPicker"
+            android:text="btnServiceClientConnect" />
+
+        <TextView
+            android:id="@+id/tvServiceClientTimerStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spnServiceClientPicker"
+            android:text="Timer: 00:00:00" />
+
+        <Button
+            android:id="@+id/btnServiceClientTimerCtl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvServiceClientTimerStatus"
+            android:text="btnServiceTimerCtl" />
+
+        <Button
+            android:id="@+id/btnServiceClientTimerReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/btnServiceClientTimerCtl"
+            android:layout_toRightOf="@id/btnServiceClientTimerCtl"
+            android:text="btnServiceTimerReset" />
+    </RelativeLayout>
+
+</LinearLayout>

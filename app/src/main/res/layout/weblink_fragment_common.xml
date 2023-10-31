@@ -1,0 +1,201 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<LinearLayout
+		android:id="@+id/loading_screen"
+		android:visibility="visible"
+		android:background="@android:color/holo_green_light"
+		android:layout_width="match_parent"
+		android:gravity="center"
+		android:orientation="vertical"
+		android:layout_height="match_parent">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Sample Loading Screen"
+			android:gravity="center"
+			android:textSize="@dimen/sample_loading_screen_title"
+			android:textColor="@android:color/holo_red_dark"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Replace with Loading Animation"
+			android:gravity="center"
+			android:textSize="@dimen/sample_loading_screen_text"
+			android:textColor="@android:color/holo_red_dark"/>
+
+		<ProgressBar
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/margin_default"
+			android:indeterminate="true"/>
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/text_stats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#7F000000"
+        android:textColor="#ffffff"
+        android:layout_gravity="top" />
+	
+	<ProgressBar 
+	    android:id="@+id/wait_indicator"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:layout_gravity="center" />
+
+	<Button
+	    android:id="@+id/btn_backspace"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="top|right"
+	    android:text="Backspace"
+	    android:visibility="gone" />
+	
+    <RelativeLayout
+        android:id="@+id/cmd_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_gravity="bottom|center_horizontal">
+        
+        <ImageButton
+			android:id="@+id/hide_button"
+	        android:layout_alignParentTop="true"
+        	android:layout_centerHorizontal="true"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/cmd_bar_grip"
+			android:background="@android:color/transparent"
+			android:paddingLeft="@dimen/padding_horizontal"
+			android:paddingRight="@dimen/padding_horizontal"
+			android:paddingTop="@dimen/margin_small"
+			android:contentDescription="@string/dummy" />
+        
+        <FrameLayout  
+            android:id="@+id/cmd_bar_buttons"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/hide_button"
+			android:background="@drawable/cmd_bar_back">
+
+	        <RelativeLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+				android:paddingStart="@dimen/margin_small"
+				android:paddingEnd="@dimen/margin_small"
+				android:layout_gravity="center_vertical">
+
+				<ImageButton
+                    android:id="@+id/minimize_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/dummy"
+                    android:scaleType="center"
+                    android:src="@drawable/button_minimize"/>
+
+				<ImageButton
+                    android:id="@+id/back_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/dummy"
+                    android:scaleType="center"
+                    android:src="@drawable/button_back"
+					android:layout_toEndOf="@id/minimize_button"
+					android:layout_marginStart="@dimen/margin_big"
+					android:layout_alignTop="@id/minimize_button"
+					android:layout_alignBottom="@id/minimize_button"/>
+
+				<ImageButton
+                    android:id="@+id/home_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/dummy"
+                    android:scaleType="center"
+                    android:src="@drawable/button_home"
+					android:layout_toEndOf="@id/back_button"
+					android:layout_marginStart="@dimen/margin_small"
+					android:layout_alignTop="@id/minimize_button"
+					android:layout_alignBottom="@id/minimize_button"/>
+
+				<ImageButton
+                    android:id="@+id/forward_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/dummy"
+                    android:scaleType="center"
+                    android:src="@drawable/button_forward"
+					android:layout_toEndOf="@id/home_button"
+					android:layout_marginStart="@dimen/margin_small"
+					android:layout_alignTop="@id/minimize_button"
+					android:layout_alignBottom="@id/minimize_button"/>
+
+				<ImageView
+					android:id="@+id/handbrake_button"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@android:color/transparent"
+					android:scaleType="fitCenter"
+					android:src="@drawable/button_handbrake"
+					android:layout_centerHorizontal="true"
+					android:layout_alignTop="@id/minimize_button"
+					android:layout_alignBottom="@id/minimize_button"/>
+
+				<ImageView
+					android:id="@+id/prev"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignTop="@id/minimize_button"
+					android:layout_alignBottom="@id/minimize_button"
+					android:layout_toStartOf="@id/play"
+					android:background="@android:color/transparent"
+					android:paddingEnd="@dimen/margin_small"
+					android:scaleType="centerInside"
+					android:src="@drawable/button_prev" />
+
+				<ImageView
+					android:id="@+id/play"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@android:color/transparent"
+					android:scaleType="centerInside"
+					android:src="@drawable/button_play"
+					android:layout_toStartOf="@id/next"
+					android:layout_alignTop="@id/minimize_button"
+					android:layout_alignBottom="@id/minimize_button"
+					android:paddingEnd="@dimen/margin_small"/>
+
+				<ImageView
+					android:id="@+id/next"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@android:color/transparent"
+					android:layout_marginEnd="@dimen/margin_big"
+					android:scaleType="fitCenter"
+					android:src="@drawable/button_next"
+					android:layout_toStartOf="@id/close_button"
+					android:layout_alignTop="@id/minimize_button"
+					android:layout_alignBottom="@id/minimize_button" />
+
+				<ImageButton
+                    android:id="@+id/close_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/dummy"
+                    android:scaleType="center"
+                    android:src="@drawable/button_disconnect"
+					android:layout_alignParentEnd="true"/>
+	        </RelativeLayout>
+		</FrameLayout>
+
+    </RelativeLayout>
+</merge>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:title="@string/basic_settings"
+        android:summary="@string/basic_settings_summary">
+
+        <Preference
+            android:key="@string/key_version_info"
+            android:summary="@string/client_version_summary"
+            android:title="@string/client_version" />
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/key_show_statistics"
+            android:summary="@string/show_stats_summary"
+            android:switchTextOff="@string/no"
+            android:switchTextOn="@string/yes"
+            android:title="@string/show_stats" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="@string/key_show_cmdbar"
+            android:summary="@string/show_cmdbar_summary"
+            android:switchTextOff="@string/no"
+            android:switchTextOn="@string/yes"
+            android:title="@string/show_cmdbar" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="@string/key_auto_connect_ui"
+            android:summary="@string/auto_connect_ui_summary"
+            android:switchTextOff="@string/no"
+            android:switchTextOn="@string/yes"
+            android:title="@string/auto_connect_ui" />
+
+        <ListPreference
+            android:defaultValue="@string/value_usb"
+            android:dialogTitle="@string/connect_mode"
+            android:entries="@array/entries_connect_mode"
+            android:entryValues="@array/values_connect_mode"
+            android:key="@string/key_connect_mode"
+            android:summary="@string/connect_mode_summary"
+            android:title="@string/connect_mode" />
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/key_enable_fps_manager"
+            android:summary="@string/enable_fps_manager_summary"
+            android:switchTextOff="@string/no"
+            android:switchTextOn="@string/yes"
+            android:title="@string/enable_fps_manager" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/misc_settings"
+        android:summary="@string/misc_settings_summary" >
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="@string/key_auto_start_proxy"
+            android:summary="@string/auto_start_proxy_summary"
+            android:switchTextOff="@string/no"
+            android:switchTextOn="@string/yes"
+            android:title="@string/auto_start_proxy" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="advanced_settings"
+        android:summary="@string/advanced_settings_summary"
+        android:title="@string/advanced_settings" >
+        <ListPreference
+            android:defaultValue="800x480"
+            android:dialogTitle="@string/video_resolution"
+            android:entries="@array/entries_encode_resolutions"
+            android:entryValues="@array/values_encode_resolutions"
+            android:key="@string/key_video_resolution"
+            android:summary="@string/video_resolution_summary"
+            android:title="@string/video_resolution" />
+
+        <ListPreference
+            android:defaultValue=""
+            android:dialogTitle="@string/key_frame_interval"
+            android:entries="@array/entries_key_frame_interval"
+            android:entryValues="@array/values_key_frame_interval"
+            android:key="@string/key_keyframe_interval"
+            android:summary="@string/key_frame_interval_summary"
+            android:title="@string/key_frame_interval" />
+
+        <ListPreference
+            android:defaultValue=""
+            android:dialogTitle="@string/bit_rate"
+            android:entries="@array/entries_bit_rate"
+            android:entryValues="@array/values_bit_rate"
+            android:key="@string/key_bit_rate"
+            android:summary="@string/bit_rate_summary"
+            android:title="@string/bit_rate" />
+
+        <EditTextPreference
+            android:defaultValue=""
+            android:dialogTitle="@string/app_switch_timeout"
+            android:inputType="number"
+            android:key="@string/key_app_switch_timeout"
+            android:summary="@string/app_switch_timeout_summary"
+            android:title="@string/app_switch_timeout" />
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/key_diag"
+            android:summary="@string/diag_summary"
+            android:switchTextOff="@string/no"
+            android:switchTextOn="@string/yes"
+            android:title="@string/diag" />
+
+        <ListPreference
+            android:defaultValue="@string/value_h264_custom_decoder"
+            android:dialogTitle="@string/video_decoder"
+            android:entries="@array/entries_video_decoder"
+            android:entryValues="@array/values_video_decoder"
+            android:key="@string/key_video_decoder"
+            android:summary="@string/video_decoder_summary"
+            android:title="@string/video_decoder" />
+
+        <ListPreference
+            android:defaultValue=""
+            android:dialogTitle="@string/frame_rate"
+            android:entries="@array/entries_frame_rate"
+            android:entryValues="@array/values_frame_rate"
+            android:key="@string/key_frame_rate"
+            android:summary="@string/frame_rate_summary"
+            android:title="@string/frame_rate" />
+
+        <ListPreference
+            android:defaultValue="@string/value_texture_view"
+            android:dialogTitle="@string/decoder_view"
+            android:entries="@array/entries_decoder_target_view"
+            android:entryValues="@array/values_decoder_target_view"
+            android:key="@string/key_decoder_surface"
+            android:summary="@string/decoder_target_view_summary"
+            android:title="@string/decoder_view" />
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/key_frame_skipping"
+            android:summary="@string/frame_skipping_summary"
+            android:switchTextOff="@string/no"
+            android:switchTextOn="@string/yes"
+            android:title="@string/frame_skipping" />
+    </PreferenceCategory>
+</PreferenceScreen>

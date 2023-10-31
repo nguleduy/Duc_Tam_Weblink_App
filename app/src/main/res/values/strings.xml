@@ -1,0 +1,133 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <!-- Misc -->
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="dummy">dummy</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="splash">Splash image</string>
+    <string name="action_settings">Settings</string>
+    <string name="info">Info</string>
+    <string name="connection_required">This sample requires an active connection!</string>
+    <string name="disconnect_required">This sample requires that there is no active connection! Please disconnect.</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="orientation">Orientation: %s</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Preferences Strings -->
+    <string name="basic_settings">Basic settings</string>
+    <string name="basic_settings_summary">Basic settings that control debugging features and the UI appearance.</string>
+    <string name="misc_settings">Misc settings</string>
+    <string name="misc_settings_summary">Miscellaneous settings</string>
+    <string name="advanced_settings">Advanced settings</string>
+    <string name="advanced_settings_summary">Setting key frames, video bit rate, etc.</string>
+
+    <string name="client_version">WebLink Client Version</string>
+    <string name="client_version_summary">Version of the WebLink Sample Client Application.</string>
+    <string name="key_version_info">version_info</string>
+
+    <string name="show_stats">Show statistics</string>
+    <string name="show_stats_summary">Show frame/data rate information on the command bar.</string>
+    <string name="key_show_statistics">show_statistics</string>
+
+    <string name="show_cmdbar">Show nav bar</string>
+    <string name="show_cmdbar_summary">Show the command bar while connected. The command bar contains buttons for WebLink Navigation.</string>
+    <string name="key_show_cmdbar">show_cmdbar</string>
+
+    <string name="key_frame_interval">Key-frame interval</string>
+    <string name="key_frame_interval_summary">The number of regular frames between key-frames in the video projection.</string>
+    <string name="key_keyframe_interval">key_frame_interval</string>
+
+    <string name="frame_skipping">Frame Skipping</string>
+    <string name="frame_skipping_summary">Enabe or Disable Frame Skipping (Not supported by H264)</string>
+    <string name="key_frame_skipping">frame_skipping</string>
+
+    <string name="bit_rate">Bit rate</string>
+    <string name="bit_rate_summary">Sets the target video bit-rate of the video projection.</string>
+    <string name="key_bit_rate">bit_rate</string>
+
+    <string name="app_switch_timeout">Application switch timeout</string>
+    <string name="app_switch_timeout_summary">Timeout (in seconds) to wait when switching between Native Applications.</string>
+    <string name="key_app_switch_timeout">app_switch_timeout</string>
+
+    <string name="video_decoder">Video decoder</string>
+    <string name="video_decoder_summary">Select the video decoder to be used.</string>
+    <string name="key_video_decoder">decoder</string>
+    <string name="value_i420_decoder">i420</string>
+    <string name="value_yuv_decoder">yuv</string>
+    <string name="value_h264_decoder">h264</string>
+    <string name="value_h264_custom_decoder">custom-h264</string>
+
+    <string name="frame_rate">Frame rate</string>
+    <string name="frame_rate_summary">Select target frame rate</string>
+    <string name="key_frame_rate">frame_rate</string>
+
+    <string name="auto_connect_ui">Auto Connect UI</string>
+    <string name="auto_connect_ui_summary">When enabled will show the auto-connect user interface.</string>
+    <string name="key_auto_connect_ui">auto_connect_ui</string>
+
+
+    <string name="enable_fps_manager">Frame Rate Manager</string>
+    <string name="enable_fps_manager_summary">Enable client side frame rate management (dynamic fps target)</string>
+    <string name="key_enable_fps_manager">enable_fps_manager</string>
+
+    <string name="auto_start_proxy">Auto Start Proxy</string>
+    <string name="auto_start_proxy_summary">Automatically start the services proxy.</string>
+    <string name="key_auto_start_proxy">Auto auto_start_proxy Proxy</string>
+
+    <string name="connect_mode">Connection Mode</string>
+    <string name="connect_mode_summary">Connection type used for the auto-connect mode.</string>
+    <string name="key_connect_mode">connect_mode</string>
+    <string name="value_socket">socket</string>
+    <string name="value_usb">usb</string>
+
+    <string name="video_resolution">Video Resolution</string>
+    <string name="video_resolution_summary">Determines the resolution of the video projection.</string>
+    <string name="key_video_resolution">encoder_resolution</string>
+    <string name="value_480p_standard">720x480</string>
+    <string name="value_576p_standard">720x576</string>
+    <string name="value_480p_big">800x480</string>
+    <string name="value_720p_small">960x720</string>
+    <string name="value_720p_standard">1280x720</string>
+
+    <string name="decoder_view">Decoder view</string>
+    <string name="decoder_target_view_summary">Specify, which View to use as a target for the video decoder.</string>
+    <string name="key_decoder_surface">decoder_surface</string>
+    <string name="value_surface_view">surface_view</string>
+    <string name="value_texture_view">texture_view</string>
+
+    <string name="diag">Diagnostic Logging</string>
+    <string name="diag_summary">Enable or Disable Diagnostic Logging</string>
+    <string name="key_diag">diag</string>
+
+    <!-- WebLink Fragment Strings -->
+    <string name="warning">Warning</string>
+    <string name="enable_weblink_host">The connection to the WebLink Server was lost. Please activate a WebLink-compatible application on the phone.</string>
+    <string name="connect">Connect</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="failed_to_connect">Failed to connect!</string>
+
+    <!-- HID over TCP/IP Sample Strings -->
+    <string name="touch_area_width">Touch Area Width</string>
+    <string name="touch_area_height">Touch Area Height</string>
+
+    <!-- Media Services Sample Strings -->
+    <string name="auto_connect">Auto Connect</string>
+    <string name="title">Title:</string>
+    <string name="title_placeholder">Song Title</string>
+    <string name="artist">Artist:</string>
+    <string name="artist_placeholder">Song Artist</string>
+    <string name="album">Album:</string>
+    <string name="album_placeholder">Song Album</string>
+    <string name="media_status">Media Status:</string>
+    <string name="unknown">UNKNOWN</string>
+    <string name="audio_status">Audio Status:</string>
+    <string name="video_status">Video Status:</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="time_placeholder">00:00</string>
+</resources>
